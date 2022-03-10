@@ -4,12 +4,14 @@
 // A<-->T C<--->G . El complementario de A es T y viceversa. El complementario de C es G y viceversa.
 
 function DNAStrand(dna){
+  //Hacer que cada una de las letras sea la pareja de su complementaria
   let sequence = {
     "A": "T",
     "T": "A",
     "G": "C",
     "C": "G"
   }
+  //Remplazar las letras por su complementaria 
   return dna.replace(/A|T|G|C/g, function(matched){
     return sequence[matched];
   });
