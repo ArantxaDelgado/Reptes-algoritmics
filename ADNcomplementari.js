@@ -14,3 +14,4 @@ function DNAStrand(dna){
     return sequence[matched];
   });
 }
+jzdfhushazegoihlkigolkdzg
