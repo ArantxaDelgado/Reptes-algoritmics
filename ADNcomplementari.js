@@ -20,3 +20,28 @@ function DNAStrand(dna){
 console.log(DNAStrand("AAAA")); //TTTT
 console.log(DNAStrand("ATTGC"));  //TAACG
 console.log(DNAStrand("GTAT")); //CATA
+
+/* Corrección Clase
+function DNAStrandV2(dna) {
+  // Creamos un objeto llamado "secuencia" que contiene todas las combinaciones.
+  let secuencia = {
+      A: "T",
+      T: "A",
+      G: "C",
+      C: "G"
+  }
+
+  let dnaComplementary = "";
+  let siguienteLetra;
+
+  for (let index = 0; index < dna.length; index++) {
+      siguienteLetra = dna[index];
+      dnaComplementary = dnaComplementary + secuencia[siguienteLetra];
+  }
+
+  return dnaComplementary;
+}
+
+console.log(DNAStrandV2("AAAA")); // "TTTT"
+console.log(DNAStrandV2("ATTGC")); // "TAACG"
+console.log(DNAStrandV2("GTAT")) // "CATA" */
