@@ -10,12 +10,13 @@
  */
 
 //Crear una variable 'siglo' donde "guardar" la info
-//Tengo que conseguir los 2 primeros digitos del año
+//Tengo que conseguir los 2 primeros digitos del año (substring?)
     //si lo divido entre de 100 y hago un math floor me dara los 2 primeros numeros
 //Tengo que sumarle 1
 
  function century(year) {
     // Finish this :)
+        //Math.ceil te da el siguiente numero entero
     let siglo = Math.floor((year-1)/100) + 1;
     //Si no le resto 1 el ultimo año del siglo salta a ser del siguiente siglo
     return siglo
