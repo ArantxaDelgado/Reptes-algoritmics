@@ -12,9 +12,9 @@ function DNAStrand(dna){
     "C": "G"
   }
   //Remplazar las letras por su complementaria 
-  return dna.replace(/A|T|G|C/g, function(matched){
+  return dna.replace(/A|T|G|C/g, function(matched) {
     return sequence[matched];
-  });
+});
 }
 
 console.log(DNAStrand("AAAA")); //TTTT
