@@ -3,13 +3,13 @@
 // Pensar: en el constructor, que tipo de datos nos va a ayudar a almacenar valores como un 'diccionario' ?
 // Pista: es el tipo de dato más importante en JavaScript
 
-let diccionario = {
+/* let diccionario = {
     "Apple": "A usually green or red fruit",
     "Soccer": "A Sport"
 }
 
 diccionario["House"] = "A place to live";
-//console.log(diccionario)
+//console.log(diccionario) */
 
 class Dictionary {
     constructor() {
@@ -29,8 +29,9 @@ class Dictionary {
         if (!this.dictionary[key]) {
             return 'Can\'t find entry for ' + key;
         }
-        
+
         return this.dictionary[key];
+    }
 }
 
 
@@ -42,6 +43,9 @@ d.newEntry('Apple', 'A fruit');
 console.log(d.look('Apple'), 'A fruit');
 
 console.log(d.look("Banana"));
+d.newEntry('Banana', 'Yellow fruit');
+console.log(d.look("Banana"));
+
 
 // d.newEntry('Soccer', 'A sport');
 // console.log(d.look('Soccer'), 'A sport');
